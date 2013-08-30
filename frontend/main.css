@@ -1,10 +1,11 @@
 html, body, svg {
-	width: 100%;
+/*	width: 100%; */
 }
 
 div {
 }
 
+/*
 #info {
 	float: left;
 }
@@ -12,3 +13,4 @@ div {
 svg {
 	float: right;
 }
+*/
