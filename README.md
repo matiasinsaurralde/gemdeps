@@ -1,1 +1,1 @@
-== gemdeps (visualizing gem dependencies)
+# gemdeps (visualizing gem dependencies)
