@@ -1,0 +1,14 @@
+html, body, svg {
+	width: 100%;
+}
+
+div {
+}
+
+#info {
+	float: left;
+}
+
+svg {
+	float: right;
+}
