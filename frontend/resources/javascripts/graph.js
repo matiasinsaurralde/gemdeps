@@ -30,7 +30,7 @@ function render( container ) {
 		.attr( 'height', 32 )
 		.attr( 'class', 'gem' )
 		.attr( 'id', node.id )
-		.link( 'gem.png' );
+		.link( 'resources/graphics/gem.png' );
 
 	});
 
