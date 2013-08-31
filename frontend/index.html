@@ -3,10 +3,12 @@
 	<meta charset="utf-8" />
 	<title>gemdeps: visualizing gem dependencies</title>
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css">
+	<link rel="stylesheet" href="resources/stylesheets/modal.css">
 	<link rel="stylesheet" href="resources/stylesheets/main.css">
 	<script src="resources/javascripts/jquery-1.9.1.js"></script>
 	<script src="resources/javascripts/vivagraph.js"></script>
 	<script src="resources/javascripts/graph.js"></script>
+	<script src="resources/javascripts/modal.js"></script>
 </head>
 <body>
 
@@ -14,14 +16,57 @@
 
 		<div class="pure-u-1-5" id="info">
 			<h3>(nil)</h3>
+
+			<a id="modal-btn" href="#welcome"></a>
+
+			<section class="semantic-content" id="welcome" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+
+				<div class="modal-inner">
+
+					<div class="modal-content">
+						<form class="pure-form pure-form-aligned">
+							<fieldset>
+								<legend>Settings</legend>
+
+								<div class="pure-control-group">
+
+									<label for="gem_name">Your favorite gem</label>
+									<input type="text" name="gem_name" id="gem_name" placeholder="Gem" />
+
+								</div>
+
+								<div class="pure-control-group">
+
+									<label for="depth">Graph depth</label>
+									<input type="text" name="depth" id="depth" placeholder="Depth" value="5" />
+
+								</div>
+
+								<div class="pure-controls">
+									<button type="submit" class="pure-button pure-button-primary">Let me see</button>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+
+					<footer></footer>
+
+				</div>
+
+				<a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">×</a>
+
+			</section>
 		</div>
+
 		<div class="pure-u-4-5" id="viz"></div>
 
 	</div>
 
 	<script>
 		$(document).ready( function() {
-			render( document.getElementById('viz') );
+			// render( document.getElementById('viz') );
+			$('#modal-btn')[0].click();
+			$('#gem_name').focus();
 		});
 	</script>
 </body>
