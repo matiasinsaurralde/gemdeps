@@ -61,11 +61,11 @@ html {
 }
 .semantic-content .modal-inner {
   position: absolute;
-  top: 50px;
-  left: 50%;
+  top: 200px;
+  left: 56%;
   z-index: 20;
   margin-left: -325px;
-  width: 650px;
+  width: 500px;
   overflow-x: hidden;
   border-radius: 2px;
   background: #fff;
@@ -125,10 +125,10 @@ html {
 .semantic-content .modal-close:after {
   content: '\00d7';
   position: absolute;
-  top: 25px;
-  left: 50%;
+  top: 175px;
+  left: 44%;
   z-index: 20;
-  margin-left: 285px;
+  margin-left: 270px;
   background: #fff;
   border-radius: 2px;
   padding: 2px 8px;
