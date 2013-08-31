@@ -8,11 +8,20 @@
 	<script src="graph.js"></script>
 </head>
 <body>
-	<div>
-		<div id="info"><h3>(nil)</h3></div>
-		<div id="viz">
-			<script>render();</script>
+
+	<div class="pure-g">
+
+		<div class="pure-u-1-5" id="info">
+			<h3>(nil)</h3>
 		</div>
+		<div class="pure-u-4-5" id="viz"></div>
+
 	</div>
+
+	<script>
+		$(document).ready( function() {
+			render( document.getElementById('viz') );
+		});
+	</script>
 </body>
 </html>
