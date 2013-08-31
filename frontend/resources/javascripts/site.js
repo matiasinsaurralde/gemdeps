@@ -5,7 +5,8 @@ $(document).ready( function() {
 
 	// render( document.getElementById('viz') );
 
-	$('.pure-button').click( function() {
-					alert( 0 );
+	$('.pure-button').click( function(e) {
+					$('#welcome').fadeOut();
+					e.preventDefault();
 				});
 });
