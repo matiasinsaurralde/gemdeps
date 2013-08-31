@@ -6,7 +6,7 @@ function getData() {
 		}).responseText );
 }
 
-function render() {
+function render( container ) {
 
 	var graph = Viva.Graph.graph();
 
@@ -38,7 +38,7 @@ function render() {
 		nodeUI.attr('x', pos.x - 12).attr('y', pos.y - 12);
 	});
 
-	var renderer = Viva.Graph.View.renderer(graph, { graphics: graphics });
+	var renderer = Viva.Graph.View.renderer(graph, { graphics: graphics, container: container });
 
 	renderer.run();
 
@@ -52,3 +52,4 @@ function render() {
 				});
 
 }
+
